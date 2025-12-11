@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento - Pluminty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png.png" alt="Logo Pluminty"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html" style="color: var(--rosa-forte);">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina-texto">
+            <h2>Central de Atendimento</h2>
+            <p>Precisa de ajuda com seu pedido ou quer saber mais sobre nossos ursinhos? Entre em contato abaixo.</p>
+
+            <form class="form-contato" action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
+                <div class="grupo-input">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="email">E-mail para contato:</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fafafa;">
+                        <option>Dúvida sobre Produto</option>
+                        <option>Trocas e Devoluções</option>
+                        <option>Status do Pedido</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Solicitação</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteudo-footer">
+            <div class="coluna-footer">
+                <img src="logo.png.png" alt="Pluminty Logo" class="logo-footer">
+                <p>Sua loja de fofuras favorita!</p>
+            </div>
+            <div class="coluna-footer">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="coluna-footer">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                    <li><a href="contato.html">Política de Envio</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Pluminty. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

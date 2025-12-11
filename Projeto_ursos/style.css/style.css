@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    /* Cores Principais */
+    --rosa-forte: #DE3163;      
+    --rosa-claro: #E195AB;      
+    --vinho-escuro: #6A0623;    
+    --verde-lima: #CCDF92;      
+    --verde-medio: #59AC77;   
+    --verde-palido: #95D6AC;    
+    
+    /* Fundos */
+    --fundo-header: #FFEDFA;    /* Fundo rosa do topo */
+    --fundo-geral: #F5F5F5;     /* Fundo do site (bege/cinza claro) */
+    --branco: #FFFFFF;
+    
+    /* Textos */
+    --texto-escuro: #000000;
+    --texto-cinza: #555555;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Konkhmer Sleokchher', cursive; /* Fonte padrão do texto */
+}
+
+body {
+    background-color: #fcfdf5; /* Um tom bem clarinho de verde/creme para o fundo geral */
+    color: var(--texto-cinza);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Títulos com a fonte especial do Figma */
+h1, h2, h3, h4 {
+    font-family: 'Konkhmer Sleokchher', cursive;
+    color: var(--vinho-escuro);
+}
+
+
+header {
+    background-color: var(--fundo-header);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+
+header .logo img {
+    height: 40px; /* Ajuste conforme o tamanho da sua logo */
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    color: var(--vinho-escuro);
+    font-weight: bold;
+    font-size: 14px;
+    font-style: italic; /* Conforme imagem */
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background-color: #fcfdf5; /* Fundo creme/verde claro */
+}
+
+.conteudo-hero {
+    max-width: 50%;
+}
+
+.conteudo-hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--verde-medio); /* Título verde conforme imagem */
+}
+
+/* Efeito de duas cores no título se precisar, ou mantém verde */
+.conteudo-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: var(--texto-cinza);
+}
+
+.botoes-hero {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primario {
+    background-color: var(--verde-lima);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    border: 1px solid var(--verde-lima);
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--texto-cinza);
+    cursor: pointer;
+}
+
+.imagem-hero {
+    position: relative;
+    max-width: 45%;
+}
+
+.imagem-hero img {
+    border-radius: 20px;
+}
+
+.imagem-hero span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+
+.beneficios {
+    background-color: #EBF7E3; /* Fundo verde claro da faixa */
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+    text-align: center;
+}
+
+.item-beneficio img {
+    margin: 0 auto 10px auto;
+    width: 40px;
+    height: 40px;
+  
+}
+
+.item-beneficio h3 {
+    color: var(--vinho-escuro);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.item-beneficio p {
+    font-size: 0.9rem;
+}
+
+
+.categorias {
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.categorias h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--vinho-escuro);
+}
+
+.container-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-categoria {
+    background: white;
+    border: 1px solid var(--rosa-claro);
+    border-radius: 15px;
+    padding: 30px;
+    width: 45%;
+    text-align: center;
+}
+
+.card-categoria img {
+    height: 150px;
+    margin: 0 auto 15px;
+    object-fit: contain;
+}
+
+.card-categoria h3 {
+    color: var(--vinho-escuro);
+    font-size: 1.5rem;
+}
+
+.card-categoria button {
+    margin-top: 15px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.destaques {
+    padding: 50px 100px;
+    background-color: #fcfdf5;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-secao h2 {
+    color: var(--vinho-escuro); /* Cor vinho */
+    font-size: 2rem;
+}
+
+.titulo-secao p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 30px;
+}
+
+.produto {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    /* Deixar com cara de cartão simples */
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background-color: var(--verde-medio);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.produto h3 {
+    font-size: 1rem;
+    color: var(--vinho-escuro);
+    margin-bottom: 5px;
+}
+
+.produto p {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 15px;
+    min-height: 40px; /* Alinha os preços */
+}
+
+.preco-acao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preco {
+    color: var(--rosa-forte);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn-carrinho {
+    background-color: var(--rosa-claro);
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* Bolinha */
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ver-mais {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ver-mais button {
+    background: white;
+    border: 1px solid var(--verde-medio);
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: var(--vinho-escuro);
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #fcfdf5;
+    padding: 50px 100px 20px;
+    border-top: 1px solid #eee;
+}
+
+.conteudo-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.coluna-footer {
+    width: 30%;
+}
+
+.logo-footer {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.coluna-footer h4 {
+    margin-bottom: 20px;
+    color: var(--vinho-escuro);
+}
+
+.coluna-footer ul li {
+    margin-bottom: 10px;
+}
+
+.coluna-footer a {
+    font-size: 0.9rem;
+    color: var(--texto-cinza);
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
